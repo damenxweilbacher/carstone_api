@@ -1,4 +1,5 @@
 class CarsController < ApplicationController
+  before_action :authorize_request
   def index # use get
     cars = Car.all 
     render json: cars

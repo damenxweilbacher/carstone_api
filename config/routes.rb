@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   delete '/makes/:id' => 'makes#destroy' # delete (destroy)
   post '/cars' => 'cars#create'
   post '/makes' => 'makes#create'# create
+  post '/signup', to: 'users#create'
+  post '/login', to: 'sessions#create'
 end
